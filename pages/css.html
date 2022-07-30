@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Propiedades CSS</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="../images/logo.png" alt="logo html5" class="logo">
+        <div class="titulo">
+            <h1> DESARROLLO WEB</h1>
+            <h2> Introducción a HTML 5</h2>
+        </div>
+        <hr>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html" target="_blank">Inicio</a></li>
+                <li><a href="./elements.html" target="_blank">Elementos</a></li>
+                <li><a href="./attributes.html" target="_blank">Atributos</a></li>
+                <li><a href="./css.html" target="_blank">CSS</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+    </header>
+
+    <main class="container">
+
+        <h1 class="page_title">Propiedades CSS</h1>
+        <div style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="small">Propiedad</th>
+                        <th>Descripción</th>
+                        <th>Valores admitidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>align-content</td>
+                        <td>Especifica la alineación predeterminada de los elementos dentro del contenedor flexible
+                            cuando dichos elementos ocupan más de una linea.</td>
+                        <td><strong>flexbox align-content:</strong> flex-start | flex-end | center | space-between |
+                            space-around | stretch;<br><strong>grid align-content:</strong> start | end | center |
+                            space-between | space-around | stretch | space-evenly</td>
+                    </tr>
+                    <tr>
+                        <td>all</td>
+                        <td>Establece el valor de todas las propiedades del elemento seleccionado.</td>
+                        <td>initial | inherit | unset</td>
+                    </tr>
+                    <tr>
+                        <td>animation</td>
+                        <td>Especifica las animaciones basadas en   keyframes  .</td>
+                        <td>nombre duración retardo número-de-iteraciones dirección estado-de-la-animación</td>
+                    </tr>
+                    <tr>
+                        <td>background</td>
+                        <td>Es una propiedad abreviada
+                            para:<br>background-color<br>background-image<br>background-position<br>background-size<br>background-repeat<br>background-origin<br>background-clip<br>background-attachment
+                        </td>
+                        <td>bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial |
+                            inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>background-attachment</td>
+                        <td>Establece si una imagen de fondo se desplaza con el resto de la página o si es fija.</td>
+                        <td>scroll | fixed | local | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>Establece el color de fondo de un elemento.</td>
+                        <td>color | transparent | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>background-image</td>
+                        <td>Establece una o más imágenes de fondo para un elemento.</td>
+                        <td>url | none | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>Es una abreviatura de las propiedades:<br>border-width<br>border-style
+                            (requerido)<br>border-color</td>
+                        <td>border-width border-style border-color | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>border-collapse</td>
+                        <td>Establece si los bordes de la tabla deben contraerse en un solo borde o estar separados como
+                            en HTML estándar</td>
+                        <td>separate | collapse | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>border-color</td>
+                        <td>Establece el color de los cuatro bordes de un elemento. Esta propiedad puede tener de uno a
+                            cuatro valores para especificar el color de los bordes superior, derecha, inferior e
+                            izquierda respectivamente.</td>
+                        <td>  color   | transparent | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>border-image</td>
+                        <td>Permite especificar una imagen para usarla como borde alrededor de un elemento</td>
+                        <td>source slice width outset repeat | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>border-radius</td>
+                        <td>Define el radio de las esquinas del borde del elemento.</td>
+                        <td>  length   |   %   /   1-4 length   |   %   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>border-spacing</td>
+                        <td>Establece la distancia entre los bordes de las celdas adyacentes.</td>
+                        <td>  length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>border-style</td>
+                        <td>Establece el estilo de los cuatro bordes de un elemento. Esta propiedad puede tener de uno a
+                            cuatro valores.</td>
+                        <td>none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset | initial
+                            | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>border-width</td>
+                        <td>Establece el ancho de los cuatro bordes de un elemento. Esta propiedad puede tener de uno a
+                            cuatro valores</td>
+                        <td>medium | thin | thick |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>bottom</td>
+                        <td>Afecta a la posición vertical de un elemento posicionado. Esta propiedad no tiene efecto en
+                            elementos no posicionados.</td>
+                        <td>auto |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>caret-color</td>
+                        <td>Especifica el color del cursor (signo de intercalación) en entradas, áreas de texto o
+                            cualquier elemento que sea editable.</td>
+                        <td>auto | color | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>@charset</td>
+                        <td>La regla @charset especifica la codificación de caracteres utilizada en la hoja de estilo.
+                        </td>
+                        <td>@charset «charset»;</td>
+                    </tr>
+                    <tr>
+                        <td>clip</td>
+                        <td>Permite especificar un rectángulo para recortar un elemento absolutamente posicionado. El
+                            rectángulo se especifica como cuatro coordenadas, todas desde la esquina superior izquierda
+                            del elemento que se va a recortar. <br>No funciona con «overflow: visible».</td>
+                        <td>auto | shape | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>color</td>
+                        <td>Establece el color del texto.</td>
+                        <td>  color   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>column-count</td>
+                        <td>Especifica el número de columnas en las que se debe dividir un elemento.</td>
+                        <td>  number   | auto | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>column-fill</td>
+                        <td>Especifica cómo llenar columnas, equilibradas o no.</td>
+                        <td>balance | auto | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>column-gap</td>
+                        <td>Establece el espacio entre las columnas.</td>
+                        <td>  length   | normal | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>column-rule</td>
+                        <td>Establece el ancho, el estilo y el color de la regla entre columnas.</td>
+                        <td>  column-rule-width column-rule-style column-rule-color   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>columns</td>
+                        <td>Es una propiedad abreviada para:<br>column-width<br>column-count</td>
+                        <td>auto |   column-width column-count   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>Se utiliza con los pseudo-elementos<strong> ::before</strong> y <strong>::after</strong>,
+                            para insertar contenido generado</td>
+                        <td>normal | none | counter | attr |   string    | open-quote | close-quote | no-open-quote
+                            | no-close-quote |   url   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>counter-increment</td>
+                        <td>Aumenta o disminuye el valor de uno o más contadores CSS.</td>
+                        <td>none |   id   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>counter-reset</td>
+                        <td>Crea o restablece uno o más contadores CSS.<br>Generalmente se usa junto con las propiedades
+                              counter-increment   y   content  .
+                        </td>
+                        <td>none |   name number   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>cursor</td>
+                        <td>Especifica el cursor del ratón que se mostrará cuando se apunte sobre un elemento.</td>
+                        <td>cursor:    valor  ;</td>
+                    </tr>
+                    <tr>
+                        <td>display</td>
+                        <td>Establece el comportamiento de visualización (el tipo de cuadro de representación) de un
+                            elemento.</td>
+                        <td>inline | block | contents | flex | grid | inline-block | inline-flex | inline-table |
+                            list-item | run-in</td>
+                    </tr>
+                    <tr>
+                        <td>empty-cells</td>
+                        <td><br>Establece si mostrar o no los bordes en las celdas vacías de una tabla.</td>
+                        <td>show | hide | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>filter</td>
+                        <td>Define efectos visuales (como desenfoque y saturación) a un elemento (a menudo utilizado
+                            para imágenes).</td>
+                        <td>none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() |
+                            invert() | opacity() | saturate() | sepia() | url();</td>
+                    </tr>
+                    <tr>
+                        <td>flex</td>
+                        <td>Es una propiedad abreviada para:<br>flex-grow<br>flex-shrink<br>flex-basis<br>Establece la
+                            longitud flexible en elementos flexibles.</td>
+                        <td>  flex-grow      flex-shrink      flex-basis   | auto | initial |
+                            inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>Especifica si un elemento debe flotar a la izquierda, a la derecha o no flotar en absoluto.
+                            <br>Los elementos posicionados de manera absoluta ignoran la propiedad   float  . Los
+                            elementos junto a un elemento flotante fluirán a su alrededor. Para evitar esto, use la
+                            propiedad clear
+                        </td>
+                        <td>none | left | right | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>font</td>
+                        <td>Es una abreviatura para las
+                            propiedades:<br>font-style<br>font-variant<br>font-weight<br>font-size/line-height<br>font-family
+                        </td>
+                        <td>  font-style      font-variant      font-weight      font-size/line-height
+                                font-family   | caption | icon | menu | message-box | small-caption | status-bar |
+                            initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>@font-face</td>
+                        <td>Se deben definir un nombre para la fuente (por ejemplo, miFuente), y luego apuntar al
+                            archivo de fuente.</td>
+                        <td>@font-face  {<br>      font-properties  <br>}</td>
+                    </tr>
+                    <tr>
+                        <td>font-family</td>
+                        <td>Especifica la fuente de texto para un elemento. Es posible especificar varios nombres de
+                            fuente como un sistema «alternativo». Si el navegador no admite la primera fuente, prueba
+                            con la siguiente fuente.</td>
+                        <td>family-name | generic-family | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>Establece el tamaño de una fuente.</td>
+                        <td>medium | xx-small | x-small | small | large | x-large | xx-large | smaller | larger |
+                              length   | initial | inherit;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>font-style</td>
+                        <td>Especifica el estilo de fuente para un texto.</td>
+                        <td>Normal | italic | oblique | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>font-weight</td>
+                        <td>Establece qué tan gruesos o delgados deben mostrarse los caracteres del texto.</td>
+                        <td>normal | bold | bolder | lighter |   number   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>gap</td>
+                        <td>Define el tamaño del espacio entre las filas y las columnas.</td>
+                        <td>  row-gap column-gap  ;</td>
+                    </tr>
+                    <tr>
+                        <td>grid</td>
+                        <td>Es una abreviatura para las
+                            propiedades:<br>grid-template-rows<br>grid-template-columns<br>grid-template-areas<br>grid-auto-rows<br>grid-auto-columns<br>grid-auto-flow
+                        </td>
+                        <td>none |   grid-template-rows    /    grid-template-columns   |
+                              grid-template-areas   |   grid-template-rows    /    [grid-auto-flow]
+                                grid-auto-columns   |   [grid-auto-flow]
+                                grid-auto-rows    /    grid-template-columns   | initial | inherit;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>grid-area</td>
+                        <td>Especifica el tamaño y la ubicación de un elemento de cuadrícula en un diseño de cuadrícula
+                            y es una propiedad abreviada para las siguientes
+                            propiedades:<br>grid-row-start<br>grid-column-start<br>grid-row-end<br>grid-column-end</td>
+                        <td>  grid-row-start / grid-column-start / grid-row-end /
+                                grid-column-end    |    itemname  ;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-auto-flow</td>
+                        <td>Controla cómo se insertan en la cuadrícula los elementos colocados automáticamente.</td>
+                        <td>row | column | dense | row dense | column dense;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-auto-rows</td>
+                        <td>Establece un tamaño para las filas en un contenedor de cuadrícula.</td>
+                        <td>auto | max-content | min-content |   length  ;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-column</td>
+                        <td>Especifica el tamaño y la ubicación de un elemento de cuadrícula en un diseño de cuadrícula
+                            y es una propiedad abreviada para las siguientes
+                            propiedades:<br>grid-column-start<br>grid-column-end</td>
+                        <td>  grid-column-start / grid-column-end  ;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-column-gap</td>
+                        <td>Define el tamaño del espacio entre las columnas en un diseño de cuadrícula.</td>
+                        <td>grid-column-gap:    length  ;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-column-start</td>
+                        <td>Define en qué línea de columna comenzará el elemento.</td>
+                        <td>auto | span    n   |   column-line  ;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-gap</td>
+                        <td>Define el tamaño del espacio entre las filas y las columnas en un diseño de cuadrícula y es
+                            una propiedad abreviada para las siguientes propiedades:<br>grid-row-gap<br>grid-column-gap
+                        </td>
+                        <td>  grid-row-gap grid-column-gap  ;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-template</td>
+                        <td>Es una propiedad abreviada para las siguientes
+                            propiedades:<br>grid-template-rows<br>grid-template-columns<br>grid-template-areas</td>
+                        <td>none |   grid-template-rows    /    grid-template-columns   |
+                              grid-template-areas   | initial | inherit;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>grid-template-areas</td>
+                        <td>Especifica áreas dentro de un elemento grid.</td>
+                        <td>none |   itemnames  ;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-template-columns</td>
+                        <td>Especifica el número (y el ancho) de las columnas en un diseño grid.</td>
+                        <td>none | auto | max-content | min-content |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>grid-template-rows</td>
+                        <td>Especifica el número (y las alturas) de las filas en un diseño de cuadrícula.</td>
+                        <td>none | auto | max-content | min-content |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>Establece la altura de un elemento. No incluye relleno, bordes o márgenes.</td>
+                        <td>auto |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>@import</td>
+                        <td>Regla que le permite importar una hoja de estilo a otra hoja de estilo.</td>
+                        <td>  url   |   string list-of-mediaqueries  ;</td>
+                    </tr>
+                    <tr>
+                        <td>@keyframes</td>
+                        <td>Regla que especifica el código de animación.</td>
+                        <td>@keyframes    name   {  keyframes-selector    {  css-styles;}  }</td>
+                    </tr>
+                    <tr>
+                        <td>left</td>
+                        <td>Afecta la posición horizontal de un elemento posicionado. Esta propiedad no tiene efecto en
+                            elementos no posicionados.</td>
+                        <td>auto |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>letter-spacing</td>
+                        <td>Aumenta o disminuye el espacio entre caracteres en un texto.</td>
+                        <td>normal |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>line-height</td>
+                        <td>Especifica la altura de una línea.</td>
+                        <td>normal |   number   |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>list-style-image</td>
+                        <td>Reemplaza el marcador de elemento de lista con una imagen.</td>
+                        <td>none |   url   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>list-style-position</td>
+                        <td>Especifica la posición de los marcadores de elementos de lista (viñetas).</td>
+                        <td>inside | outside | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>list-style-type</td>
+                        <td>Especifica el tipo de marcador de elemento de lista en una lista.</td>
+                        <td>list-style-type:    value  ;</td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>Establece los márgenes de un elemento y es una propiedad abreviada para las siguientes
+                            propiedades:<br>margin-top<br>margin-right<br>margin-bottom<br>margin-left</td>
+                        <td>  length   | auto | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>margin-bottom</td>
+                        <td>Establece el margen inferior de un elemento.</td>
+                        <td>  length   | auto | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>margin-left</td>
+                        <td>Establece el margen izquierdo de un elemento. </td>
+                        <td>   length   | auto | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>margin-right</td>
+                        <td>Establece el margen derecho de un elemento. </td>
+                        <td>   length   | auto | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>margin-top</td>
+                        <td>Establece el margen superior de un elemento. </td>
+                        <td>   length   | auto | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>max-height</td>
+                        <td>Define la altura máxima de un elemento.</td>
+                        <td>none |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>max-width</td>
+                        <td>Define la anchura máxima de un elemento. </td>
+                        <td>none |   length   | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>@media</td>
+                        <td>La regla se usa para aplicar diferentes estilos para diferentes tipos de
+                            medios/dispositivos.</td>
+                        <td>@media not | only    type    and    (feature    and | or |
+                            not    mediafeature)    {  <br>   CSS-Code;<br>  }</td>
+                    </tr>
+                    <tr>
+                        <td>min-height</td>
+                        <td>Define la altura mínima de un elemento. </td>
+                        <td>  length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>min-width</td>
+                        <td>Define la anchura mínima de un elemento. </td>
+                        <td>  length   | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>opacity</td>
+                        <td>Establece el nivel de opacidad de un elemento.</td>
+                        <td>  number   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>order</td>
+                        <td>Especifica el orden de un artículo flexible en relación con el resto de los artículos
+                            flexibles dentro del mismo contenedor.</td>
+                        <td>    number   | initial | inherit;   </td>
+                    </tr>
+                    <tr>
+                        <td>outline-color</td>
+                        <td>Especifica el color de un contorno</td>
+                        <td>invert |   color   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>outline-offset</td>
+                        <td>Agrega espacio entre el contorno y el borde o borde de un elemento.</td>
+                        <td>  length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>outline-style</td>
+                        <td>Especifica el estilo de un outline.</td>
+                        <td>none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset | initial
+                            | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>outline-width</td>
+                        <td>Especifica el ancho de un contorno.</td>
+                        <td>medium | thin | thick |   length    | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>overflow</td>
+                        <td>Especifica lo que debería suceder si el contenido desborda el cuadro de un elemento.</td>
+                        <td>visible | hidden | scroll | auto | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>overflow-wrap</td>
+                        <td>Especifica si el navegador puede o no dividir líneas con palabras largas, si desbordan el
+                            contenedor.</td>
+                        <td>normal | anywhere | break-word | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>overflow-x</td>
+                        <td>Especifica si se se agrega una barra de desplazamiento o se muestra el contenido de
+                            desbordamiento de un elemento de nivel de bloque, cuando se desborda en los ejes izquierdos
+                            y derechos.</td>
+                        <td>visible | hidden | scroll | auto | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>overflow-y</td>
+                        <td>Especifica si se se agrega una barra de desplazamiento o se muestra el contenido de
+                            desbordamiento de un elemento de nivel de bloque, cuando se desborda en los ejes inferiores
+                            y superiores. </td>
+                        <td>visible | hidden | scroll | auto | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td><br>El   padding   de un elemento es el espacio entre su contenido y su borde. Es una
+                            propiedad abreviada para:<br>padding-top<br>padding-right<br>padding-bottom<br>padding-left
+                        </td>
+                        <td>  length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>padding-bottom</td>
+                        <td>Establece el   padding   inferior (espacio) de un elemento.</td>
+                        <td>  length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>padding-left</td>
+                        <td>Establece el   padding   inferior (espacio) de un elemento. </td>
+                        <td>  length   | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>padding-right</td>
+                        <td>Establece el   padding   inferior (espacio) de un elemento. </td>
+                        <td>  length   | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>padding-top</td>
+                        <td>Establece el   padding   inferior (espacio) de un elemento. </td>
+                        <td>  length   | initial | inherit; </td>
+                    </tr>
+                    <tr>
+                        <td>position</td>
+                        <td>Especifica el tipo de método de posicionamiento utilizado para un elemento (estático,
+                            relativo, absoluto, fijo o pegajoso).</td>
+                        <td>static | absolute | fixed | relative | sticky | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>quotes</td>
+                        <td>Establece el tipo de comillas para las citas.</td>
+                        <td>none |   string   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>resize</td>
+                        <td>Define si (y cómo) el usuario puede cambiar el tamaño de un elemento.</td>
+                        <td>none | both | horizontal | vertical | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>right</td>
+                        <td>Afecta la posición horizontal de un elemento posicionado. Esta propiedad no tiene efecto en
+                            elementos no posicionados.</td>
+                        <td>auto |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>row-gap</td>
+                        <td>Especifica el espacio entre las filas de la cuadrícula.</td>
+                        <td>  length   | normal | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>tab-size</td>
+                        <td>Especifica el ancho de un carácter de tabulación.</td>
+                        <td>  number   |   length    | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>table-layout</td>
+                        <td>Define el algoritmo utilizado para diseñar las celdas, filas y columnas de la tabla.</td>
+                        <td>auto | fixed | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>text-align</td>
+                        <td>Indica la alineación horizontal del texto en un elemento.</td>
+                        <td>left | right | center | justify | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>text-align-last</td>
+                        <td>Especifica cómo alinear la última línea de un texto</td>
+                        <td>auto | left | right | center | justify | start | end | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>top</td>
+                        <td>Afecta a la posición vertical de un elemento posicionado. Esta propiedad no tiene efecto en
+                            elementos no posicionados.</td>
+                        <td>auto |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>transform</td>
+                        <td>Aplica una transformación 2D o 3D a un elemento.</td>
+                        <td>none | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>transform-origin</td>
+                        <td>Le permite cambiar la posición de los elementos transformados.</td>
+                        <td>  x-axis y-axis z-axis   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>transform-style</td>
+                        <td>Especifica cómo se representan los elementos anidados en el espacio 3D.</td>
+                        <td>flat | preserve-3d | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>transition</td>
+                        <td>Es una propiedad abreviada
+                            para:<br>transition-property<br>transition-duration<br>transition-timing-function<br>transition-delay
+                        </td>
+                        <td>  property duration timing-function delay   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>transition-duration</td>
+                        <td>Especifica cuántos segundos (s) o milisegundos (ms) tarda en completarse un efecto de
+                            transición.</td>
+                        <td>  time   | initial | inherit;</td>
+                    </tr>
+
+                    <tr>
+                        <td>user-select</td>
+                        <td>Especifica si se puede seleccionar el texto de un elemento.</td>
+                        <td>auto | none | text | all;</td>
+                    </tr>
+                    <tr>
+                        <td>vertical-align</td>
+                        <td>Establece la alineación vertical de un elemento.</td>
+                        <td>baseline |   length   | sub | super | top | text-top | middle | bottom | text-bottom |
+                            initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>visibility</td>
+                        <td>Indica si un elemento es visible o no.</td>
+                        <td>visible | hidden | collapse | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>white-space</td>
+                        <td>Especifica cómo se maneja el espacio en blanco dentro de un elemento.</td>
+                        <td>normal | nowrap | pre | pre-line | pre-wrap | initial | inherit;</td>
+                    <tr>
+                        <td>widows</td>
+                        <td>Especifica el número mínimo de líneas que se deben dejar en la parte superior de una página
+                            o columna.</td>
+                        <td>integer   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>Establece el ancho de un elemento.</td>
+                        <td>auto |   value   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>word-break</td>
+                        <td>Especifica cómo deben dividirse las palabras al llegar al final de una línea.</td>
+                        <td>normal | break-all | keep-all | break-word | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>word-spacing</td>
+                        <td>Aumenta o disminuye el espacio en blanco entre las palabras</td>
+                        <td>normal |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>widows</td>
+                        <td>Especifica el número mínimo de líneas que se deben dejar en la parte superior de una página
+                            o columna.</td>
+                        <td>  integer   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>Establece el ancho de un elemento.</td>
+                        <td>auto |   value   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>word-break</td>
+                        <td>Especifica cómo deben dividirse las palabras al llegar al final de una línea.</td>
+                        <td>normal | break-all | keep-all | break-word | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>word-spacing</td>
+                        <td>Aumenta o disminuye el espacio en blanco entre las palabras</td>
+                        <td>normal |   length   | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>word-wrap</td>
+                        <td>Permite que las palabras largas se puedan dividir y pasar a la siguiente línea.</td>
+                        <td>normal | break-word | initial | inherit;</td>
+                    </tr>
+                    <tr>
+                        <td>writing-mode</td>
+                        <td>Especifica si las líneas de texto se disponen horizontal o verticalmente.</td>
+                        <td>horizontal-tb | vertical-rl|vertical-lr;</td>
+                    </tr>
+                    <tr>
+                        <td>z-index</td>
+                        <td>Especifica el orden de apilamiento de un elemento. Un elemento con mayor orden de
+                            apilamiento siempre está delante de un elemento con menor orden de apilamiento.</td>
+                        <td>auto |   number   | initial | inherit;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+</html>

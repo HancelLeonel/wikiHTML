@@ -25,12 +25,13 @@ html {
 }
 
 .titulo h1, h2 {
-    color: cyan;
+    background-image: linear-gradient(to right, #282A36, #6b6b6b);
+    color: white;
 }
 
 a {
     font-size: large;
-    color: greenyellow;
+    color: white;
 }
 
 nav ul {
@@ -51,7 +52,10 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    color: black;
+}
+
+table td:hover{
+    background-color: darksalmon;
 }
 
 table .small {
@@ -63,7 +67,7 @@ table .vsmall {
 }
 
 thead, tfoot {
-    background-color: orangered;
+    background-color: gray;
 }
 
 thead th {
@@ -75,13 +79,15 @@ tbody {
     text-shadow: 0 0 0.1px white;
 }
 
+
+
 tbody tr:nth-child(odd) {
     border: 1px solid black;
-    background-color: orange;
+    background-color: rgb(172, 160, 160);
 }
 
 tbody tr:nth-child(even) {
-    background-color: tomato;
+    background-color: rgb(121, 100, 100);
     border: 1px solid black;
 
 }
@@ -91,7 +97,7 @@ tbody td{
 }
 
 table {
-    background-color: orangered;
+    background-color: #282A36;
 
 }
 
@@ -103,7 +109,7 @@ table {
 
 .aside h1 {
     text-align: center;
-    color: cyan;
+    color: orange;
 }
 
 .aside ul {
@@ -115,6 +121,7 @@ table {
 }
 
 footer {
+    background-image: linear-gradient(to right, #282A36, #6b6b6b);
     display: grid;
     grid-template-areas:
         "left right";
@@ -133,6 +140,22 @@ footer .right {
             "articles"
             "aside";
     }
+}
+
+@media(max-width: 900px){
+
+    tbody tr:nth-child(odd) {
+        border: 1px solid black;
+        background-color: rgb(121, 100, 100);
+        
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: rgb(172, 160, 160);
+        border: 1px solid black;
+    
+    }
+
 }
 
 .page_title{
